@@ -28,29 +28,29 @@ Here's a step-by-step guide to setting up your WhatsApp bot on a freshly install
     
 3.  **Create a project folder**: Choose a location on your computer where you want to create the project folder for your WhatsApp bot. For example, you can create a folder named `whatsbot` on your desktop. In the terminal, navigate to the desired location using the `cd` command:
     
-    `cd C:\Users\YourUsername\Desktop` 
+        cd C:\Users\YourUsername\Desktop
     
     Replace `YourUsername` with your actual Windows username.
     
 4.  **Initialize the project**: Once inside the desired location, run the following command to initialize a new Node.js project:
     
     
-    `npm init -y` 
+        npm init -y
     
     This command creates a new `package.json` file, which will track the dependencies and configuration for your project.
     
 5.  **Install dependencies**: Next, install the required dependencies for your WhatsApp bot. In the terminal, run the following command:
     
     
-    `npm install whatsapp-web.js qrcode-terminal` 
+        npm install whatsapp-web.js qrcode-terminal 
     
     This command installs the `whatsapp-web.js` package, which allows interaction with the WhatsApp Web platform, and the `qrcode-terminal` package, which generates QR codes for authentication.
     
 6.  **Create the bot files**: Create two JavaScript files within the `whatsbot` folder. In the terminal, run the following commands:
     
     
-    `echo > bot-instance1.js
-    echo > bot-instance2.js` 
+        echo > bot-instance1.js
+        echo > bot-instance2.js 
     
     These commands create empty files named `bot-instance1.js` and `bot-instance2.js` in the `whatsbot` folder.
     
@@ -61,11 +61,11 @@ Here's a step-by-step guide to setting up your WhatsApp bot on a freshly install
     Terminal 1:
     
     
-        `node bot-instance1.js` 
+        node bot-instance1.js 
         
      Terminal 2:
                 
-        `node bot-instance2.js` 
+        node bot-instance2.js 
         
       The bot instances will start running and display QR codes for authentication.
         
