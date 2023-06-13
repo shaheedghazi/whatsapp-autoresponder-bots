@@ -4,15 +4,15 @@ This repository contains an example project that demonstrates how to create and 
 
 ## Table of Contents
 
--   [Getting Started](https://chat.openai.com/c/fe5517fc-6958-4354-b9a0-2cd403473bd4#getting-started)
--   [Installation](https://chat.openai.com/c/fe5517fc-6958-4354-b9a0-2cd403473bd4#installation)
--   [Usage](https://chat.openai.com/c/fe5517fc-6958-4354-b9a0-2cd403473bd4#usage)
--   [Configuration](https://chat.openai.com/c/fe5517fc-6958-4354-b9a0-2cd403473bd4#configuration)
--   [Creating Bot Instances](https://chat.openai.com/c/fe5517fc-6958-4354-b9a0-2cd403473bd4#creating-bot-instances)
--   [Handling User Commands](https://chat.openai.com/c/fe5517fc-6958-4354-b9a0-2cd403473bd4#handling-user-commands)
--   [Forwarding Messages to Human Operators](https://chat.openai.com/c/fe5517fc-6958-4354-b9a0-2cd403473bd4#forwarding-messages-to-human-operators)
--   [Contributing](https://chat.openai.com/c/fe5517fc-6958-4354-b9a0-2cd403473bd4#contributing)
--   [License](https://chat.openai.com/c/fe5517fc-6958-4354-b9a0-2cd403473bd4#license)
+-   [Getting Started]
+-   [Installation]
+-   [Usage]
+-   [Configuration]
+-   [Creating Bot Instances]
+-   [Handling User Commands]
+-   [Forwarding Messages to Human Operators]
+-   [Contributing]
+-   [License]
 
 ## Getting Started
 
