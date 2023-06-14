@@ -1,0 +1,95 @@
+// To add new options, you can follow these steps:
+
+// 1. Add a new case inside the switch statement in the handleIncomingMessage function, representing the new command option.
+async function handleIncomingMessage(msg) {
+  // ...
+
+  } else if (activeChats[chatId].mode === 'bot') {
+    switch (command) {
+      case '1':
+        await sendEnvatoInfo(msg);
+        break;
+      case '2':
+        await sendAdobeInfo(msg);
+        break;
+      case '3':
+        await sendOtherInfo(msg);
+        break;
+      case 'chat':
+        activeChats[chatId].mode = 'human';
+        await sendChatStartedMessage(msg);
+        break;
+      // Add a new case for the new command option
+      case '4':
+        await sendNewOptionInfo(msg);
+        break;
+      default:
+        await sendInvalidCommandMessage(msg);
+        break;
+    }
+  }
+}
+
+// 2. Implement the corresponding logic for the new command, which could involve sending information or performing any other desired action.
+async function sendNewOptionInfo(msg) {
+  const newOptionInfo = 'Here is some information about the new option...';
+  await sendMessage(msg.from, newOptionInfo);
+}
+
+// 3. If necessary, update the initial options message in the sendInitialOptions function to include the new option.
+async function sendInitialOptions(msg) {
+  const welcomeMessage =
+    'Welcome to My Company. Please choose from the options below:\n' +
+    '1. Send Information about Envato\n' +
+    '2. Send Information about Adobe\n' +
+    '3. Send Information about Other Products\n' +
+    'To chat with a human operator, send "chat".';
+  // Add the new option to the welcome message
+  welcomeMessage += '\n4. Send Information about the New Option';
+
+  await sendMessage(msg.from, welcomeMessage);
+}
+
+// To remove existing options, you can follow these steps:
+
+// 1. Remove the corresponding case from the switch statement in the handleIncomingMessage function.
+async function handleIncomingMessage(msg) {
+  // ...
+
+  } else if (activeChats[chatId].mode === 'bot') {
+    switch (command) {
+      case '1':
+        await sendEnvatoInfo(msg);
+        break;
+      case '2':
+        await sendAdobeInfo(msg);
+        break;
+      case '3':
+        await sendOtherInfo(msg);
+        break;
+      case 'chat':
+        activeChats[chatId].mode = 'human';
+        await sendChatStartedMessage(msg);
+        break;
+      // Remove the case for the option you want to remove
+      default:
+        await sendInvalidCommandMessage(msg);
+        break;
+    }
+  }
+}
+
+// 2. If needed, update the initial options message in the sendInitialOptions function to reflect the removed option.
+async function sendInitialOptions(msg) {
+  const welcomeMessage =
+    'Welcome to My Company. Please choose from the options below:\n' +
+    '1. Send Information about Envato\n' +
+    '2. Send Information about Adobe\n' +
+    '3. Send Information about Other Products\n' +
+    'To chat with a human operator, send "chat".';
+  // Remove the option from the welcome message
+
+  await sendMessage(msg.from, welcomeMessage);
+}
+
+// Remember to adjust the logic and messages according to your specific requirements.
